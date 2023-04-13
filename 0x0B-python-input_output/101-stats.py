@@ -18,10 +18,10 @@ try:
             i += 1
             try:
                 file_size += int(tokens[-1])
-                if a == i:
+        if a == i:
                     i += 1
             except FileNotFoundError:
-                if a == i:
+        if a == i:
                     continue
         if i % 10 == 0:
             print("File size: {:d}".format(file_size))
