@@ -1,7 +1,7 @@
--- display max tempretature of each state
--- order by statename
+-- displays teh average temp by city
+-- ordered by temperature desc
 
-SELECT state, MAX(value) AS max_temp
+SELECT city, AVG(value) as avg_temp
 FROM temperatures
-GROUP BY state
-ORDER BY state;
+GROUP BY city
+ORDER BY avg_temp DESC;
