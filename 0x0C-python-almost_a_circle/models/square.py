@@ -71,4 +71,4 @@ class Square(Rectangle):
         return {'id': getattr(self, "id"),
                 'size': getattr(self, "width"),
                 'x': getattr(self, "x"),
-		'y': getattr(self, "y")}
+                'y': getattr(self, "y")}
